@@ -1,0 +1,81 @@
+---
+layout: page
+title: Teaching
+permalink: /teaching/
+order: 4
+---
+
+
+<body>
+
+<p> All my unimelb teaching sites are on canvas now. </p>
+
+<p> This year I am:
+ <ul>
+  <li>content coordinator for Real Analysis, 
+<a href="https://handbook.unimelb.edu.au/2025/subjects/mast20026">MAST20026</a>
+</li>
+  <li>lecturing Partial Differential Equations, <a href="https://handbook.unimelb.edu.au/2025/subjects/mast90133">MAST90133</a></li>
+</ul> 
+
+
+</p>
+
+<p>
+First and second year undergraduate mathematics majors should consider taking the "advanced" subjects, including Real Analysis: Advanced, <a href="https://colab.research.google.com/drive/1slOKKJgM0Me-aDJejIKOvuoo_e-CuOaN">MAST20033</a>, a subject I helped create.
+</p>
+
+<p style="margin-top:1cm;">
+<b>Animations:</b>  I like making interactive tutorials and
+mathematics visualizations.  <b>Check out my github with matplotlib
+animations <a
+href="https://github.com/jessegell/math_visualizations">here</a>.</b>.
+I also made a related <b>interactive tutorial on sequence convergence
+that you can find <a
+href="https://colab.research.google.com/drive/1slOKKJgM0Me-aDJejIKOvuoo_e-CuOaN">here</a>.</b>  In Real Analysis, students learn
+mathematically rigorous notions of convergence.  Here is a video
+showing a sequence of points in the plane converging to the origin.
+</p>
+
+<div class="container">
+  <div class="video">
+    <video id="myVideo" width="640" height="480" controls  muted>
+      <source src="{{ site.baseurl }}/assets/convergence_animation.mp4" type="video/mp4">
+    Your browser does not support the video tag./>
+    </video>
+
+    <script>
+    var x = document.getElementById("myVideo");
+
+
+    x.defaultPlaybackRate = 2;
+    x.load();
+ 
+    </script> 
+    
+  </div>
+  </div>
+
+  <p style="margin-top:0.5cm;"> The video shows the points in the
+  sequence \[x_n = \frac{4}{(n+1)^{3}} + \frac{2}{(n+1)^2}, \quad y_n
+  = \frac{2}{(n+1)^2},\] plotted in order \(n = 1, 2, \dots \).  This
+  sequence converges to the origin \((0,0),\) which means that, for
+  each ball around the origin, all but finitely many of the sequence
+  points lie within it.  That is to say, for any radius \(\epsilon > 0,\)
+  there is a sequence index \(N\) (the one indicated in the video)
+  such that the \(N^{th}\) point and all subsequent points lie within
+  distance \(\epsilon\) of \((0,0)\).
+  
+<!--
+  <details class="details-example">
+    <summary>Click here for mathematical details.</summary>
+
+</details>
+</p>
+
+  <p>
+  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+</p>
+-->  
+</body>
